@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Online Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="first">
+                <div class="logo">
+                    <img src="assets/Grammarly_Primary_Lockup_Light_BG.png" alt="">
+                </div>
+                <div class="firstnav">
+                    <ul>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="betuka-div">
+                <div class="secondnav">
+                    <ul>
+                        <li><a href="#">Contact Sales</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#"><b>Get Grammarly</b> It's free</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Free Word Counter</h1>
+        <p>
+            Keep your work on track with Grammarly's word counter. Instantly view word, character, and sentence counts to meet your writing requirements—and receive real-time feedback on grammar, spelling, and typos to ensure your work is clear and polished.
+        </p>
+    </div>
+
+    <section class="container1">
+        <div class="left-panel">
+            <textarea id="text-input" placeholder="Enter words here."></textarea>
+        </div>
+
+        <div class="right-panel">
+
+            <div class="upper-one">
+                <img id="grammerly-logo" src="assets/d09684b395e3255a64b9a97e08479b74.jpg" alt="image_grammerly">
+                <h3>Suggestions</h3>
+            </div>
+            <div class="common">
+
+                <div class="second-upper-first">
+                    <div class="common-item border-bottom1words">
+                        <h6>Words</h6>
+                        <span id="words-count">0</span>
+                    </div>
+                    <div class="common-item border-bottom1spaces-without">
+                        <h6>Characters without spaces</h6>
+                        <span id="char-without-space">0</span>
+                    </div>
+                    <div class="common-item border-bottom1spaces-with">
+                        <h6>Characters with spaces</h6>
+                        <span id="char-with-space">0</span>
+                    </div>
+                </div>
+
+                <div class="second-upper-first">
+                    <div class="common-item border-bottom1 sentences">
+                        <h6>Sentences</h6>
+                        <span id="sentence-length">0</span>
+                    </div>
+                    <div class="common-item border-bottom1paragraphs">
+                        <h6>Paragraphs</h6>
+                        <span id="para-length">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lower-one">
+                <button class="cta-btn">Get Grammely It's free</button>
+            </div>
+        </div>
+    </section>
+    <script src="scipt.js"></script>
+</body>
+</html>

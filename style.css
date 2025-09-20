@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    min-width: 418px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+    padding: 60px;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 70px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(20px);
+}
+.first .logo img{
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    margin-left: 10px;
+}
+.firstnav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+    align-items: center;
+    text-decoration: none
+}
+.firstnav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight:normal;
+}
+.secondnav{
+    margin-right: 30px;
+    
+}
+.secondnav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+}
+.secondnav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.secondnav ul li:nth-child(3) a{
+    font-weight: lighter;
+    background-color: rgb(7, 107, 82);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.secondnav ul li a b{
+    font-weight: bold;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+}
+.hamburger span{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+.betuka-div{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+}
+textarea{
+    width: 40vw;
+    height: 100%;
+    padding: 20px;
+    border:none;
+    border-right: 1px solid #ddd;
+    resize: none;
+    font-size: 16px;
+    flex: 1;
+}
+.right-panel{
+    /* padding: 20px; */
+    width: 100%;
+    height: 100%;
+}
+.right-panel .upper-one img{
+    width: 30px;
+}
+.right-panel .upper-one{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+}
+.right-panel .common{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* padding: 20px; */
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.right-panel .common .second-upper-first .common-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+
+}
+.right-panel .common .second-upper-first{
+    padding: 10px;
+}
+.right-panel .common .second-upper-first .common-item h6{
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 16px;
+    
+}
+.lower-one{
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-bottom: 40px;
+}
+.cta-btn{
+    font-size: 16px;
+    padding:12px 20px;
+    border-radius: 5px;
+    background-color: #026e55bb;
+    color: white;
+    margin-top: 40px;
+    margin-left: 30px;
+    cursor: pointer;
+    border: none;
+}
+.loader{
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@media (max-width:1224px) {
+    .firstnav{
+        display: none;
+    }
+    .firstnav ul{
+        flex-direction: column;
+        border-bottom: 1px solid #ddd;
+        gap: 20px;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .firstnav.active{
+        display: flex;
+    }
+
+}
+@media (max-width:845px){
+    .container1{
+        flex-direction: column;
+        gap: 15px;
+    }
+    textarea{
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #ddd;
+    }
+    .right-panel{
+        width: 100%;
+    }
+}
+@media (max-width:796px){
+    .secondnav{
+        display: none;
+    }
+}
