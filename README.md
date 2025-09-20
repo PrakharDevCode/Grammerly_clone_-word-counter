@@ -28,4 +28,7 @@ Includes a *rotating green logo loader animation* while typing for a smooth Gram
 
 ![WhatsApp Image 2025-09-20 at 5 33 53 PM](https://github.com/user-attachments/assets/2b1b0321-6971-433d-ab3c-45f0b97b192d)
 
+![WhatsApp Image 2025-09-21 at 1 46 05 AM](https://github.com/user-attachments/assets/cd93aed1-b317-4721-805c-a24d7f96160f)
+
+
 
