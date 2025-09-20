@@ -98,6 +98,17 @@ body{
     height: 3px;
     background-color: black;
 }
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -5px);
+}
 .betuka-div{
     display: flex;
     flex-direction: row;
@@ -112,7 +123,7 @@ body{
     margin: auto;
     border: 2px solid #ddd;
     border-radius: 8px;
-    position: relative;
+    
 }
 textarea{
     width: 40vw;
@@ -192,25 +203,47 @@ textarea{
 @media (max-width:1224px) {
     .firstnav{
         display: none;
+        position: absolute; 
+        top: 60px;
+        /* line-height: 20px; */
+        /* padding-block: 30px; */
+        left: 0;
+        background: white;
+        width: 100%;
+        height: 100vh;
+    }
+    .container{
+        background: white;
     }
     .firstnav ul{
+        width: 100%;
         flex-direction: column;
         border-bottom: 1px solid #ddd;
         gap: 20px;
+        align-items: center;
+        justify-content: center;
+        line-height: 60px;
+        height: 100%;
+        margin-bottom: 1px solid #ddd;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .firstnav ul li{
+        border-bottom: 1px solid #ddd;
+    }
+    .firstnav.active{
+        display: flex; 
     }
     .hamburger{
         display: flex;
     }
-    .firstnav.active{
-        display: flex;
-    }
-
 }
 @media (max-width:845px){
     .container1{
         flex-direction: column;
         gap: 15px;
     }
+    
     textarea{
         width: 100%;
         height: 100%;
