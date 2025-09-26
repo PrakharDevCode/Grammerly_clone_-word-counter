@@ -3,6 +3,8 @@
 A simple *responsive Grammarly clone* that counts words, characters, sentences, and paragraphs in real-time.  
 Includes a *rotating green logo loader animation* while typing for a smooth Grammarly-like experience.  
 
+🌐 Live Demo : https://68d6d3bc67bc69149a355321--incandescent-zuccutto-87e1bc.netlify.app/
+
 ---
 
 ## 🚀 Features  
